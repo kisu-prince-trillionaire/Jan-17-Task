@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="shop1" class="com.shop.bean.Shop">
+		<property name="id" value="101"></property>
+		<property name="name" value="Pan Bhandar"></property>
+		<property name="menu">
+			<list>
+				<value>Banarasi Pan</value>
+				<value>Kolhapuri Pan</value>
+				<value>Kolkata Pan</value>
+				<value>Chennai Pan</value>
+			</list>
+		</property>
+		<property name="price">
+			<map>
+				<entry key="Banarasi Pan" value="50"></entry>
+				<entry key="Kolhapuri Pan" value="50"></entry>
+				<entry key="Kolkata Pan" value="50"></entry>
+				<entry key="Chennai Pan" value="50"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="shop2" class="com.shop.bean.Shop">
+		<property name="id" value="101"></property>
+		<property name="name" value="General Store"></property>
+		<property name="menu">
+			<list>
+				<value>Atta</value>
+				<value>Chawal</value>
+				<value>Dal</value>
+				<value>Pepsi</value>
+			</list>
+		</property>
+		<property name="price">
+			<map>
+				<entry key="Atta" value="50"></entry>
+				<entry key="Dal" value="50"></entry>
+				<entry key="Chawal" value="50"></entry>
+				<entry key="pepsi" value="50"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="shop3" class="com.shop.bean.Shop">
+		<constructor-arg name="id" value="101"></constructor-arg>
+		<constructor-arg name="name" value="Saree Dukan"></constructor-arg>
+		<constructor-arg name="menu">
+			<list>
+				<value>Banarasi Saree</value>
+				<value>Kolhapuri Saree</value>
+				<value>Kolkata Saree</value>
+				<value>Chennai Saree</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg name="price">
+			<map>
+				<entry key="Banarasi Pan" value="50"></entry>
+				<entry key="Kolhapuri Pan" value="50"></entry>
+				<entry key="Kolkata Pan" value="50"></entry>
+				<entry key="Chennai Pan" value="50"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+	<bean id="shop4" class="com.shop.bean.Shop">
+		<constructor-arg name="id" value="101"></constructor-arg>
+		<constructor-arg name="name" value="Kurta Dukan"></constructor-arg>
+		<constructor-arg name="menu">
+			<list>
+				<value>Banarasi Kurta</value>
+				<value>Kolhapuri Kurta</value>
+				<value>Kolkata Kurta</value>
+				<value>Chennai Kurta</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg name="price">
+			<map>
+				<entry key="Banarasi Pan" value="50"></entry>
+				<entry key="Kolhapuri Pan" value="50"></entry>
+				<entry key="Kolkata Pan" value="50"></entry>
+				<entry key="Chennai Pan" value="50"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+</beans>  
